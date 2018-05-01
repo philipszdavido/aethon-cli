@@ -1,15 +1,18 @@
 {
-    "name": "aethon-cli",
-    "version": "1.0.0",
-    "description": "",
-    "bin": {
-        "aeth": "./bin/aeth"
-    },
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [],
-    "author": "Chidume Nnamdi <kurtwanger40@gmail.com>",
-    "license": "ISC"
+  "name": "aethon-cli",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "aeth": "./bin/aeth"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Chidume Nnamdi <kurtwanger40@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^6.0.0"
+  }
 }
