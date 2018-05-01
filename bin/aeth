@@ -3,4 +3,4 @@
 'use strict';
 process.title = 'aeth'
 
-require('../src/')
+require('../index')
