@@ -12,4 +12,11 @@
  * init npm install
  * 
  * start:
+ * 
+ * build:
+ * 
  */
+
+const cli = require('./cli')
+
+cli()
