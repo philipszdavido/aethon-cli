@@ -1,0 +1,12 @@
+{
+    "name": "aethon",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "aeth start",
+        "build": "aeth build"
+    },
+    "dependencies": {
+        "aethon": "latest",
+        "aethom-dom": "latest"
+    }
+}
