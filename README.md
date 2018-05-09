@@ -16,3 +16,11 @@ aeth new aethon-project
 ```sh
 npm install aethon-cli --global
 ```
+
+# Commands
+
+command | Usage | Description
+--------| ----- |  -----------
+start   | aeth start | Serve your project over server.
+new     | aeth new   | Creates a new project
+build   | aeth build | Builds a minified bundled of your project
