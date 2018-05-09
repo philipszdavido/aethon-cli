@@ -5,6 +5,9 @@ const appDir = fs.realpathSync(process.cwd())
 const resolVe = rela => path.resolve(appDir, rela)
 
 module.exports = {
+    optimization: {
+        //minimize: false
+    },
     entry: resolVe('src/index.js'),
     output: {
         filename: 'bundle.js',
@@ -23,9 +26,9 @@ module.exports = {
                 options: {
                     plugins: [
                         [require.resolve('babel-plugin-transform-react-jsx'), { pragma: "Aethon.createElement" }],
-                        [require.resolve('babel-plugin-jsx-pragmatic'),{
-                            
-                        }]
+                        /*[require.resolve('babel-plugin-jsx-pragmatic'), {
+
+                        }]*/
                     ]
                 }
             }

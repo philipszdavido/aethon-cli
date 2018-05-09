@@ -1,5 +1,5 @@
 const webpack = require('webpack')
-const config = require('../config/webpack.config.dev.js')
+const config = require('../config/webpack.config.prod.js')
 
 function build() {
     console.log(`[webpack]: compiling code files`)
@@ -22,9 +22,12 @@ function build() {
             const info = stats.toJson()
             if (stats.hasErrors()) {
                 console.error(info.errors)
+                console.log(`[webpack]: build failed`)
+                return
             }
             if (stats.hasWarnings()) {
                 console.warn(info.warnings)
+                console.log(`[webpack]: build successful`)
             }
         })
     })
