@@ -1,4 +1,5 @@
 import AethonDOM from 'aethon-dom'
-import App from './App'
+import Aethon from 'aethon'
+import App from './App.js'
 
-AethonDOM.render(<App />, document.getElementById('root'))
+AethonDOM.render( < App / > , document.getElementById('root'))
