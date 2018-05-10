@@ -4,21 +4,14 @@ const fs = require('fs')
 const appDir = fs.realpathSync(process.cwd())
 const resolVe = rela => path.resolve(appDir, rela)
 
-/*export const devServer = {
-    contentBase: resolVe('dist'),
-    publicPath: '/',
-    compress: true,
-    //port: 9000
-};*/
-
 module.exports = {
     optimization: {
-        //minimize: false
+        minimize: false
     },
     entry: resolVe('src/index.js'),
     output: {
         filename: 'bundle.js',
-        path: resolVe('dist')
+        path: resolVe('public')
     },
     resolve: {
         //modules: ['node_modules'].concat(process.env.NODE_ENV.split(path.delimiter).filter(Boolean)),

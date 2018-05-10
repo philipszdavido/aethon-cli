@@ -11,7 +11,7 @@ module.exports = {
     entry: resolVe('src/index.js'),
     output: {
         filename: 'bundle.js',
-        path: resolVe('dist')
+        path: resolVe('public')
     },
     resolve: {
         //modules: ['node_modules'].concat(process.env.NODE_ENV.split(path.delimiter).filter(Boolean)),
