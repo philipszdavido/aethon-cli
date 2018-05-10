@@ -25,7 +25,7 @@ function parseCmd(args = []) {
             init(projectName)
             break;
         default:
-            console.log('Command not identified')
+            console.log('Command not recognized')
             break;
     }
 }
